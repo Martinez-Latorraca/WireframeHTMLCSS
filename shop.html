@@ -42,28 +42,28 @@
             </div>
           </aside>
           <div class="product-grid">
-            <div class="shop-img-contaier">
+            <div class="shop-product-contaier" onclick="displayProduct()" href="#selected-product">
               <img src="img/audi_1.jpg" alt="product 1" />
               <div class="shop-product-desc">
                 <h4 class="img-text">PRODUCT NAME</h4>
                 <h4 class="img-text">$PRICE</h4>
               </div>  
             </div>
-            <div class="shop-img-contaier">
+            <div class="shop-product-contaier" onclick="displayProduct()" href="#selected-product">
               <img src="img/audi_1.jpg" alt="product 1" />
               <div class="shop-product-desc">
                 <h4 class="img-text">PRODUCT NAME</h4>
                 <h4 class="img-text">$PRICE</h4>
               </div>
             </div>
-            <div class="shop-img-contaier">
+            <div class="shop-product-contaier" onclick="displayProduct()" href="#selected-product">
               <img src="img/audi_1.jpg" alt="product 1" />
               <div class="shop-product-desc">
                 <h4 class="img-text">PRODUCT NAME</h4>
                 <h4 class="img-text">$PRICE</h4>
               </div>
             </div> 
-            <div class="shop-img-contaier">
+            <div class="shop-product-contaier" onclick="displayProduct()" href="#selected-product">
               <img src="img/audi_1.jpg" alt="product 1" />
               <div class="shop-product-desc">                
                 <h4 class="img-text">PRODUCT NAME</h4>
@@ -75,19 +75,46 @@
       </section>
       <section id="Products">
         <div class="shop-products-container">
-          <img src="" alt="product 1" />
-          <img src="" alt="product 2" />
-          <img src="" alt="product 3" />
-          <img src="" alt="product 4" />
+          <div class="shop-product-contaier" onclick="displayProduct()" href="#selected-product">
+            <img src="img/audi_2.jpg" alt="product 1" />
+            <div class="shop-product-desc">                
+              <h4 class="img-text">PRODUCT NAME</h4>
+              <h4 class="img-text">$PRICE</h4>
+            </div> 
+          </div>
+          <div class="shop-product-contaier" onclick="displayProduct()" href="#selected-product">
+            <img src="img/audi_2.jpg" alt="product 1" />
+            <div class="shop-product-desc">                
+              <h4 class="img-text">PRODUCT NAME</h4>
+              <h4 class="img-text">$PRICE</h4>
+            </div> 
+          </div>
+          <div class="shop-product-contaier" onclick="displayProduct()" href="#selected-product">
+            <img src="img/audi_2.jpg" alt="product 1" />
+            <div class="shop-product-desc">                
+              <h4 class="img-text">PRODUCT NAME</h4>
+              <h4 class="img-text">$PRICE</h4>
+            </div> 
+          </div>
+          <div class="shop-product-contaier" onclick="displayProduct()" href="#selected-product">
+            <img src="img/audi_2.jpg" alt="product 1" />
+            <div class="shop-product-desc">                
+              <h4 class="img-text">PRODUCT NAME</h4>
+              <h4 class="img-text">$PRICE</h4>
+            </div> 
+          </div>
         </div>
       </section>
-      <section id="Selected Product">
-        <div><img src="" alt="Product" /></div>
-        <div>
-          <h2>Product title</h2>
-          <div>
-            <h4># coments</h4>
-            <h3>$ price</h3>
+      <section id="selected-product">
+        <div class="selected-product-container">
+          <img src="img/audi_3.jpeg" alt="Product" />
+          <div class="product-desc">
+
+            <div>
+              <h2 class="title">Product title</h2>
+          <div class="pricing-text">
+            <h3 class="img-text"># coments</h4>
+            <h3 class="img-text">$ price</h3>
           </div>
           <h4>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
@@ -95,11 +122,16 @@
             qui assumenda iste labore iusto commodi cum optio earum delectus
             adipisci rerum mollitia!
           </h4>
-          <div><button>Back to Shop</button> <button>Add to Cart</button></div>
+          <div>
+            <button>Back to Shop</button> 
+            <button>Add to Cart</button>
+          </div>
         </div>
+        </div>
+      </div>
       </section>
     </main>
-    <footer>
+    <footer id="footer">
       <div class="footer-container">
         <div>
           <h4>© Your Company Name</h4>
@@ -115,4 +147,13 @@
     </footer>
   </body>
   <link rel="stylesheet" href="styles.css">
+
+
+  <script>
+    function displayProduct() {
+      document.getElementById("selected-product").style.display = "flex"; 
+      document.getElementById("selected-product").scrollIntoView();
+      document.getElementById("footer").style.position="static";
+    }
+  </script>
 </html>
